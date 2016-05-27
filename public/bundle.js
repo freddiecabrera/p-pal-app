@@ -26507,7 +26507,11 @@
 	          'ul',
 	          null,
 	          this.state.data.map(function (item) {
-	            return _react2.default.createElement('li', { key: item.name });
+	            return _react2.default.createElement(
+	              'li',
+	              { key: item.name },
+	              item.name
+	            );
 	          })
 	        )
 	      ) : null

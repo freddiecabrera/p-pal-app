@@ -140,7 +140,7 @@ const Locales = React.createClass({
               <h5>List of Countries</h5>
               <ul>
                   {this.state.data.map(item => {
-                    return <li key={item.name}>{}</li>
+                    return <li key={item.name}>{item.name}</li>
                   })}
               </ul>
             </div> : null}
