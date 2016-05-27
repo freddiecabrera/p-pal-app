@@ -1,0 +1,177 @@
+.welcome {
+  text-align: center;
+  margin-top: 15em;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+.property-input {
+  margin-top: 2em;
+}
+
+.btn-floating {
+  margin-right: 1em;
+}
+
+.my-modul {
+  width: 20em;
+  height: 20em;
+  background-color: #FAFAFA;
+  border-radius: 3px;
+  overflow: auto;
+  text-align: center;
+  z-index: 1000;
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.secondary-content {
+  cursor: pointer
+}
+
+.clear-icon {
+  color: #304ffe;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.modul-clear {
+  position: fixed;
+  margin-left: 9%;
+  margin-top: -4px;
+  cursor: pointer;
+}
+
+/*----------Loader----------*/
+
+#main {
+  height:40px;
+  width:40px;
+  background:#304ffe;
+  border-radius:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:100;
+}
+
+div.loader {
+  background:#fff;
+  height:14px;
+  width:14px;
+  border-radius:100%;
+  position:absolute;
+  margin:auto;
+}
+
+.ball-one {
+  top:0;
+  left:0;
+  right:65px;
+  bottom:65px;
+  animation: anim 2s infinite ease-in;
+}
+
+@keyframes anim {
+  0%{
+    background:#00bfa5;
+    right:65px;
+    bottom:65px;
+    z-index:150;
+  }
+  33%{
+    right:-65px;
+    bottom:-65px;
+  }
+  66%{
+    width:10px;
+    height:10px;
+  }
+  99%{
+    right:65px;
+    bottom:65px;
+    height:14px;
+    width:14px;
+    z-index:0;
+  }
+   100%{
+    background:#00bfa5;
+  }
+}
+
+.ball-two {
+  top:0;
+  right:0;
+  left:65px;
+  bottom:65px;
+  animation: anim-two 2s infinite ease-in;
+  animation-delay: .4s;
+}
+
+@keyframes anim-two {
+  0%{
+    background:#00bfa5;
+    left:65px;
+    bottom:65px;
+    z-index:150;
+  }
+  33%{
+    left:-65px;
+    bottom:-65px;
+  }
+  66%{
+    width:10px;
+    height:10px;
+  }
+  99%{
+    left:65px;
+    bottom:65px;
+    height:14px;
+    width:14px;
+    z-index:0;
+  }
+  100%{
+    background:#00bfa5;
+  }
+}
+
+.ball-three {
+  top:-65px;
+  right:0;
+  left:0;
+  bottom:0;
+  animation: anim-three 2s infinite ease-in;
+  animation-delay: .8s;
+}
+
+@keyframes anim-three {
+  0%{
+    background:#00bfa5;
+    top:-65px;
+    z-index:150;
+  }
+  33%{
+    top:65px;
+  }
+  66%{
+    width:10px;
+    height:10px;
+  }
+  99%{
+    top:-65px;
+    height:14px;
+    width:14px;
+    z-index:0;
+  }
+   100%{
+    background:#00bfa5;
+  }
+}
