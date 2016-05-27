@@ -26303,7 +26303,6 @@
 	    this.setState({ addedProperties: [].concat(_toConsumableArray(this.state.addedProperties), [property]), property: '' });
 	  },
 	  deleteProperty: function deleteProperty(property) {
-	    console.log(property);
 	    this.setState({ addedProperties: this.state.addedProperties.filter(function (items) {
 	        return items !== property;
 	      }) });
@@ -26508,11 +26507,7 @@
 	          'ul',
 	          null,
 	          this.state.data.map(function (item) {
-	            return _react2.default.createElement(
-	              'li',
-	              { key: item.name },
-	              item.name
-	            );
+	            return _react2.default.createElement('li', { key: item.name });
 	          })
 	        )
 	      ) : null
